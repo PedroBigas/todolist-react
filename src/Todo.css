@@ -11,15 +11,24 @@ body{
     
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 h1{
     color: white;
     
 }
 
 input{
-    border-radius: 15px;
+    border-radius: 5px;
     border-style: none;
     padding: 10px;
+    outline: 0;
+    border-bottom: 2px solid #56ab2f;
+    border-left: 2px solid #56ab2f;
 }
 
 
@@ -68,4 +77,26 @@ ul{
     border-radius: 15px;
     background-color: white;
     box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.507);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardModal{
+    padding: 20px;
+    background-color: white;
+
+}
+
+.hide{
+    display: none;
 }
